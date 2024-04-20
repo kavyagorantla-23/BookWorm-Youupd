@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessible Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        input[type="text"] {
-            color: #000;
-            background-color: #fff; /* Adjust the background color for better contrast */
-        }
-        a {
-            color: #000; /* Adjust the text color for better contrast */
-            text-decoration: none;
-            margin: 0 10px;
-        }
-    </style>
-    <script>
-        // Any JavaScript code can be added here
-        // For example:
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     // JavaScript code
-        // });
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookWorm</title>
+  <style>
+    /* CSS for the BookWorm website */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+    main {
+      padding: 2em;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Sign Up</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Welcome to Our Website</h1>
-        <input type="text" placeholder="Search books..." fdprocessedid="qcrnyw">
-        <!-- Other content goes here -->
-    </main>
-    <footer>
-        <a href="#">Terms of Service</a>
-        <a href="#">Privacy Policy</a>
-    </footer>
+  <header>
+    <h1>BookWorm</h1>
+    <nav>
+<a href="#" style="color: #000;">Home</a>
+<a href="#" style="color: #000;">About</a>
+<a href="#" style="color: #000;">Contact</a>
+<a href="#" style="color: #000;">Sign Up</a>
+<a href="#" style="color: #000;">Terms of Service</a>
+<a href="#" style="color: #000;">Privacy Policy</a>
+    </nav>
+    <input type="text" placeholder="Search books..." style="color: #000; background-color: #fff;" fdprocessedid="qcrnyw">
+  </header>
+  <main>
+    <!-- Book display area -->
+    <div class="book">
+      <img src="book1.jpg" alt="Book 1">
+      <h2>Book Title</h2>
+      <p>Author: John Doe</p>
+      <p>Brief description of the book.</p>
+      <button onclick="showDetails()">More Details</button>
+      <button>Add to Cart</button>
+      <button>Purchase</button>
+    </div>
+    <!-- Repeat the above for other books -->
+  </main>
+  <footer>
+    <p>&copy; 2024 BookWorm</p>
+    <a href="#">Terms of Service</a>
+    <a href="#">Privacy Policy</a>
+  </footer>
+  <script>
+    // JavaScript for the BookWorm website
+    function showDetails() {
+      // Code to display complete book description
+    }
+  </script>
 </body>
 </html>
